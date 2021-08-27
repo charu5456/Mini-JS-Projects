@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>light bulb</title>
+    <script type="text/javascript">
+        function light(show){
+            var pic;
+            if(show==0){
+                pic = "off.png";
+            }
+            else{
+                pic = "on.png";
+            }
+            document.getElementById('bulb').src = pic;
+        }
+        </script>
+</head>
+<body>
+    <h1>Light Bulb On/Off</h1>
+    <img id="bulb" src="off.png">
+  
+        <button class="block" onclick="light(1)">ON</button>
+        &nbsp;
+        &nbsp;
+        <button class="block" onclick="light(0)">OFF</button>
+ 
+
+</body>
+</html>
