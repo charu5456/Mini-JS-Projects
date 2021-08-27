@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Unicase&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Merienda&display=swap');
+body {
+    /*text-align: center;*/
+    background-color: #3c9156;
+    color: rgb(252, 217, 217);
+    
+    font-family: 'Playfair Display', serif;
+  }
+  #quote-box {
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    right: 10%;
+    width: 80%;
+    line-height: .5;
+  }
+  .quote {
+    font-size: 4rem;
+    font-weight: 400;
+    line-height: 1.1;
+    position: relative;
+    margin: 0;
+    text-shadow: 2px 2px 5px red;
+    font-family: 'Cormorant Unicase', serif;
+    } 
+  .quote:before, .quote:after {
+    font-size: 6rem;
+    line-height: 2.5rem;
+    position: absolute;
+  }
+  .quote:before {
+    content: "“";
+    top: .25em;
+    left: -.5em;
+  }
+  .quote:after {
+    content: "”";
+    bottom: -.1em;
+    margin-left: .1em;
+    position: absolute;
+  }
+  .source {
+    font-size: 1.25rem;;
+    letter-spacing: 0.05em;
+    line-height: 1.5;
+    text-align: right;
+    text-decoration: 1px#ecaa7e overline;
+    margin-right: 4em;
+    font-family: 'Courgette', cursive;
+    text-shadow: 2px 2px 2px black;
+  }
+  .source:before {
+    content: "—";
+  }
+  .citation {
+    font-style: italic;
+    font-family: 'Courgette', cursive;
+  }
+  .citation:before {
+    content: ", ";
+    font-style: normal;
+  }
+  .year:before {
+    content: ", ";
+    font-style: normal;
+  }
+  
+  #loadQuote {
+    position: fixed;
+    cursor: pointer;
+    width: 15em;
+    display: inline-block;
+    left: 50%;
+    margin-left: -6em;
+    bottom: 150px;
+    border-radius: 50px;
+    border: 2px solid rgb(116, 0, 0);
+    color: rgb(100, 0, 0);
+    font-weight: 700;
+    font-size: 10x;
+    text-transform: uppercase;
+    padding: 15px 0;
+    font-family: 'Merienda', cursive;
+    transition: background-color 0.3s ease-in-out;
+    box-shadow:
+    inset 0 40px 0 #ecaa7e, inset 0 41px 0 #ffcec3,
+    inset 0 80px 0 #fac7af, inset 0 81px 0 #FFD4CA,
+    inset 0 120px 0 #88ebca, inset 0 121px 0 #caffd7,
+    inset 0 160px 0 #80f1a6, inset 0 161px 0 #2ad2d8,
+    inset 0 200px 0 #96dbf5;
+  }
+  #loadQuote:hover {
+    
+    color: #000000;
+    border: 2px solid #990757;
+    box-shadow:
+    inset 0 40px 0 #FDC5F5, inset 0 41px 0 #FFD4CA,
+    inset 0 80px 0 #F7AEF8, inset 0 81px 0 #FFD4CA,
+    inset 0 120px 0 #B388EB, inset 0 121px 0 #FFD4CA,
+    inset 0 160px 0 #8093F1, inset 0 161px 0 #FFD4CA,
+    inset 0 200px 0 #31ACD8;
+    
+  }
+  #loadQuote:focus {
+    outline: none;
+  }
+  
+  @media (max-width:600px) {
+    .quote {
+      font-size: 2.5rem;
+    }
+    .quote:before, .quote:after {
+      font-size: 2rem;
+    }
+    .source {
+      font-size: 1.5rem;
+    }
+  }
+  

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="HandheldFriendly" content="true">
+  <title>Random Quotes Generator</title>
+  <link href='https://fonts.googleapis.com/css?family=Playfair+Display:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="style.css">
+ 
+</head>
+<body id="bgcolor">
+  <div class="container">
+    <div id="quote-box">
+      <p class="quote">You can do anything but not everything</p>
+      <p class="source">David Allen<span class="citation">Making It All Work</span><span class="year">2009</span></p>
+    </div>
+    <button id="loadQuote">Show another quote➜</button>
+  </div>
+  <script src="index.js"></script>
+  <script>
+    setInterval(printQuote, 1500);
+  </script>
+</body>
+</html>
